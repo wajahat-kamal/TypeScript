@@ -27,4 +27,4 @@ Inference: Typescript automatically type guess karta hai.
 // Typescript Union
 
 let id: string | number = "123456"
-let StatusCode: "pending" | "success" = "pending"
+let statusCode: "pending" | "success" = "pending"
