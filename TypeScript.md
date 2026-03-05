@@ -21,4 +21,10 @@ let any: any = 5415
 // Explicit Types & Inference
 
 Explicit Type: Developer khud type likta hai.
-Inference: Typescript automatically type guess karta hai
+Inference: Typescript automatically type guess karta hai.
+
+
+// Typescript Union
+
+let id: string | number = "123456"
+let StatusCode: "pending" | "success" = "pending"
