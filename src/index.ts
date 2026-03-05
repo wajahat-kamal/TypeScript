@@ -5,7 +5,8 @@ function getChai(kind: string | number): string {
     }
     return `Chai Orders: ${kind}`
 }
-console.log(getChai("masala"));
+// console.log(getChai("masala"));
+// console.log(getChai(4));
 
 // unions
 const orders = ["10", "25", "28", "11"]
