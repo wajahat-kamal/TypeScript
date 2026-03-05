@@ -5,4 +5,3 @@ function greet(person: string): string {
 const personName = "Wajahat Kamal"
 console.log(greet(personName));
 
-
