@@ -1,10 +1,11 @@
 
-function greet(person: string): string {
-    return `Hello ${person}. Welcom to Chai aur Typescript!`
+function getChai(kind: string | number): string {
+    if (typeof kind === "string") {
+        return `Making ${kind} chai...`
+    }
+    return `Chai Orders: ${kind}`
 }
-const personName = "Wajahat Kamal"
-// console.log(greet(personName));
-
+console.log(getChai("masala"));
 
 // unions
 const orders = ["10", "25", "28", "11"]
