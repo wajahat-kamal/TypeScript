@@ -55,4 +55,10 @@ function isChaiOrder(obj: any): obj is ChaiOrder {
         && typeof obj.sugar === "number"
     )
 }
-// isChaiOrder({type: "kulhad", sugar: 50})
+
+function serveOrder(item: ChaiOrder | string) {
+    if(isChaiOrder(item)){
+        return `Serving ${item.type} chai with ${item.sugar} sugar`
+    }
+    return `Serving custom chai: ${item}`
+}
