@@ -42,7 +42,7 @@ function serve(chai: KulhadChai | CuttingChai) {
 // console.log(serve(new KulhadChai()));
 
 
-// type aliases
+// type aliase
 type ChaiOrder = {
     type: string,
     sugar: number
