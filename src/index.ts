@@ -33,3 +33,10 @@ class CuttingChai{
         return `Serving Cutting Chai`
     }
 }
+
+function serve(chai: KulhadChai | CuttingChai) {
+    if(chai instanceof KulhadChai){
+        return chai.serve()
+    }
+}
+console.log(serve(KulhadChai));
