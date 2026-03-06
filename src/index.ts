@@ -22,20 +22,20 @@ for (const order of orders) {
 
 
 
-class KulhadChai{
-    serve(){
+class KulhadChai {
+    serve() {
         return `Serving Kulhad Chai`
     }
 }
 
-class CuttingChai{
-    serve(){
+class CuttingChai {
+    serve() {
         return `Serving Cutting Chai`
     }
 }
 
 function serve(chai: KulhadChai | CuttingChai) {
-    if(chai instanceof KulhadChai){
+    if (chai instanceof KulhadChai) {
         return chai.serve()
     }
 }
@@ -47,3 +47,12 @@ type ChaiOrder = {
     type: string,
     sugar: number
 }
+
+function isChaiOrder(obj: any): obj is ChaiOrder {
+    return (
+        typeof obj === "object" && obj !== null &&
+        typeof obj.type === "string"
+        && typeof obj.sugar === "number"
+    )
+}
+// isChaiOrder({type: "kulhad", sugar: 50})
