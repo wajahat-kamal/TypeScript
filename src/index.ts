@@ -39,4 +39,11 @@ function serve(chai: KulhadChai | CuttingChai) {
         return chai.serve()
     }
 }
-console.log(serve(new KulhadChai()));
+// console.log(serve(new KulhadChai()));
+
+
+// type aliases
+type ChaiOrder = {
+    type: string,
+    sugar: number
+}
