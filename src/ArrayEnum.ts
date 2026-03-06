@@ -20,3 +20,5 @@ const cities: readonly string[] = ["Karachi", "Lahore", "Peshawar"]
 const location: [string, number] = ["Karachi", 200]
 
 // readonly tuple
+const readonlyTuple: readonly [string, number] = ["Karachi", 200]
+
