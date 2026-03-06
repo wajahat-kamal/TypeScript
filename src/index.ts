@@ -57,8 +57,12 @@ function isChaiOrder(obj: any): obj is ChaiOrder {
 }
 
 function serveOrder(item: ChaiOrder | string) {
-    if(isChaiOrder(item)){
+    if (isChaiOrder(item)) {
         return `Serving ${item.type} chai with ${item.sugar} sugar`
     }
     return `Serving custom chai: ${item}`
 }
+
+type masalaChai = { type: "masala", spiceLevel: number }
+type gingerChai = { type: "ginger", amount: number }
+type elaichiChai = { type: "elaichi", aroma: number }
