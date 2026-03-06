@@ -7,3 +7,13 @@ interface User {
 
 const user1: User = { username: "Wajahat" }
 const user2: User = { username: "Kamal", bio: "Learning TS" }
+
+
+//  readonly
+interface Config {
+    readonly appName: string, // set only one time
+    version: number
+}
+const config1: Config = { appName: "Youtube", version: 1 }
+// config1.appName = "cursor" // cannot change because its readonly
+console.log(config1);
