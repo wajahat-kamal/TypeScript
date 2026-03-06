@@ -1,5 +1,4 @@
 
-
 interface User {
     username: string,
     bio?: string
@@ -16,7 +15,7 @@ interface Config {
 }
 const config1: Config = { appName: "Youtube", version: 1 }
 // config1.appName = "cursor" // cannot change because its readonly
-console.log(config1);
+// console.log(config1);
 
 
 // 
@@ -25,3 +24,4 @@ let smallCup: Cup = { size: "200ml" }
 let largeCup = { size: "200ml", material: "steel" }
 
 smallCup = largeCup
+console.log(smallCup);
