@@ -19,3 +19,17 @@ for (const order of orders) {
     }
 }
 // console.log(currentOrder);
+
+
+
+class KulhadChai{
+    serve(){
+        return `Serving Kulhad Chai`
+    }
+}
+
+class CuttingChai{
+    serve(){
+        return `Serving Cutting Chai`
+    }
+}
