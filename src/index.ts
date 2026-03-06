@@ -66,3 +66,24 @@ function serveOrder(item: ChaiOrder | string) {
 type masalaChai = { type: "masala", spiceLevel: number }
 type gingerChai = { type: "ginger", amount: number }
 type elaichiChai = { type: "elaichi", aroma: number }
+
+type Chai = masalaChai | gingerChai | elaichiChai
+
+function MakeOrder(order: Chai) {
+    switch (order.type) {
+        case "masala":
+            return "Masala Chai"
+            break;
+
+        case "ginger":
+            return "Ginger Chai"
+            break;
+
+        case "elaichi":
+            return "Elaichi Chai"
+            break;
+
+        default:
+            break;
+    }
+}
