@@ -39,4 +39,4 @@ function serve(chai: KulhadChai | CuttingChai) {
         return chai.serve()
     }
 }
-console.log(serve(KulhadChai));
+console.log(serve(new KulhadChai()));
