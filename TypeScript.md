@@ -18,9 +18,9 @@ let unkn: unknown = 251654
 let any: any = 5415
 
 
-// Explicit Types & Inference
+// Type Assertions & Inference
 
-Explicit Type: Developer khud type likta hai.
+Type Assertions: Developer khud type likta hai.
 Inference: Typescript automatically type guess karta hai.
 
 
