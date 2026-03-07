@@ -16,8 +16,9 @@ const c2: Box<number> = { content: 16 }
 
 
 // 2nd example of generics with interface
-interface ApiRes<T>{
+interface ApiRes<T> {
     statusCode: number,
     message: string,
     data: T
 }
+const response: ApiRes<{ user: string }> = { statusCode: 200, message: "success", data: { user: "Wajahat" } }
