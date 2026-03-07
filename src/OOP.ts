@@ -20,3 +20,15 @@ class Shop {
         return this.secretIngredients
     }
 }
+
+
+// getter & setter
+class Cup {
+    private _capacity: string = "250ml"
+
+    
+    public get capacity() : string {
+        return this._capacity
+    }
+    
+}
