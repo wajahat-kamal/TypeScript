@@ -39,5 +39,11 @@ class Cup {
 
 const cup = new Cup()
 cup.capacity = "500ml"
+// console.log(cup);
 
-console.log(cup);
+
+// static
+class EkShop {
+    static shopName = "ChaiCode Cafe"
+}
+console.log(EkShop.shopName);
