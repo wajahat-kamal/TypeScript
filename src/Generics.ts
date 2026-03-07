@@ -13,3 +13,11 @@ interface Box<T> {
 }
 const c1: Box<string> = { content: "Hey, whats your name!" }
 const c2: Box<number> = { content: 16 }
+
+
+// 2nd example of generics with interface
+interface ApiRes<T>{
+    statusCode: number,
+    message: string,
+    data: T
+}
