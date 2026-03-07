@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { type AxiosResponse } from "axios";
 
 interface Shoe {
     title: string,
@@ -7,17 +7,9 @@ interface Shoe {
 }
 
 
-const fetchData = async () => {
+(async function fetchData() {
     try {
-        const res = await axios.get("https://dummyjson.com/products")
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-
-await axios.get("https://dummyjson.com/products")
-    .then(res => {
+        const res: AxiosResponse = await axios.get("https://dummyjson.com/products")
         for (const product of res.data.products.splice(0, 10)) {
             const res: Shoe = {
                 title: product.title,
@@ -26,5 +18,7 @@ await axios.get("https://dummyjson.com/products")
             }
             console.log(res)
         }
-    })
-    .catch(err => console.log(err))
+    } catch (error) {
+        console.log(error);
+    }
+}())
