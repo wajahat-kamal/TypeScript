@@ -9,6 +9,12 @@ class Chai {
 }
 
 const masalaChai = new Chai("masala", 150)
+// console.log(masalaChai);
 
 
-// Access Modifier
+// Access Modifier / private, public, protected
+class Shop {
+    public flavers: string[] = ["masala", "ginger", "elaichi"]
+    private secretIngredients: string[] = ["leaves", "cardamom"]
+    
+}
