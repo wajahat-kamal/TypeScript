@@ -1,8 +1,9 @@
 import axios, { type AxiosResponse } from "axios";
 
 interface Shoe {
-    title: string,
-    brand: string,
+    id: number
+    title: string
+    brand: string
     price: number
 }
 
@@ -11,12 +12,13 @@ interface Shoe {
     try {
         const res: AxiosResponse = await axios.get("https://dummyjson.com/products")
         for (const product of res.data.products.splice(0, 10)) {
-            const res: Shoe = {
+            const data: Shoe = {
+                id: product.id,
                 title: product.title,
                 brand: product.brand,
                 price: product.price
             }
-            console.log(res)
+            console.log(data)
         }
     } catch (error) {
         console.log(error);
