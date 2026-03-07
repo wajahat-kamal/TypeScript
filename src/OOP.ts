@@ -7,3 +7,8 @@ class Chai {
         this.price = price
     }
 }
+
+const masalaChai = new Chai("masala", 150)
+
+
+// Access Modifier
