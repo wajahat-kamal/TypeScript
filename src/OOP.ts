@@ -36,3 +36,8 @@ class Cup {
     }
 
 }
+
+const cup = new Cup()
+cup.capacity = "500ml"
+
+console.log(cup);
