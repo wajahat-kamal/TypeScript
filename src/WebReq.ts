@@ -14,13 +14,23 @@ async function fetchData() {
     try {
         const res = await fetch("https://dummyjson.com/products")
         if (!res.ok) console.log(`HTTP Error ${res.status}`);
-        const data: Shoe = await res.json()
-        console.log(data);
+        const jsonData = await res.json()
+        const data = jsonData.products.splice(0, 10)
+        for (const product of data) {
+            const data: Shoe = {
+                id: product.id,
+                title: product.title,
+                brand: product.brand,
+                price: product.price
+            }
+            console.log(data)
+        }
+        // console.log(data);
     } catch (error) {
         console.log(error);
     }
 }
-
+fetchData()
 
 
 // get data using axios
