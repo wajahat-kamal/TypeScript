@@ -28,6 +28,16 @@ const machine: machine = {
     stop(){console.log("Stop")},
 }
 
+// interface will merge
+interface Costomer{
+    name: string
+}
+interface Costomer{
+    age: number
+}
+const customer: Costomer = {name: "Wajahat", age: 16}
+
+
 // 
 type Cup = { size: string }
 let smallCup: Cup = { size: "200ml" }
