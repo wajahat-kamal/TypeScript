@@ -16,5 +16,7 @@ const masalaChai = new Chai("masala", 150)
 class Shop {
     public flavers: string[] = ["masala", "ginger", "elaichi"]
     private secretIngredients: string[] = ["leaves", "cardamom"]
-    
+    reveal(){
+        return this.secretIngredients
+    }
 }
