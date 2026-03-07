@@ -13,11 +13,14 @@ interface Shoe {
 async function fetchData() {
     try {
         const res = await fetch("https://dummyjson.com/products")
-
+        if (!res.ok) console.log(`HTTP Error ${res.status}`);
+        const data: Shoe = await res.json()
+        console.log(data);
     } catch (error) {
         console.log(error);
     }
 }
+
 
 
 // get data using axios
