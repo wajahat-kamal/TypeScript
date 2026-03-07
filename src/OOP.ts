@@ -16,7 +16,7 @@ const masalaChai = new Chai("masala", 150)
 class Shop {
     public flavers: string[] = ["masala", "ginger", "elaichi"]
     private secretIngredients: string[] = ["leaves", "cardamom"]
-    reveal(){
+    reveal() {
         return this.secretIngredients
     }
 }
@@ -26,9 +26,13 @@ class Shop {
 class Cup {
     private _capacity: string = "250ml"
 
-    
-    public get capacity() : string {
+
+    public get capacity(): string {
         return this._capacity
     }
-    
+
+    public set capacity(value: string) {
+        this.capacity = value;
+    }
+
 }
