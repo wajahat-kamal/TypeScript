@@ -29,3 +29,4 @@ enum Sugars {
    MEDIUM = 2,
    HIGH = 3
 }
+const sugar = Sugars.HIGH
