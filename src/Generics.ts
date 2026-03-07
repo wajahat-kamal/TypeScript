@@ -9,6 +9,7 @@ console.log(wrapInArray({ name: "Wajahat" }))
 
 // generics with interface
 interface Box<T> {
-    age: T
+    content: T
 }
-const n: Box<number> = { age: 16 }
+const c1: Box<string> = { content: "Hey, whats your name!" }
+const c2: Box<number> = { content: 16 }
