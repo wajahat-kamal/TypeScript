@@ -32,7 +32,7 @@ class Cup {
     }
 
     public set capacity(value: string) {
-        this.capacity = value;
+        this._capacity = value;
     }
 
 }
