@@ -38,10 +38,3 @@ interface Costomer{
 const customer: Costomer = {name: "Wajahat", age: 16}
 
 
-// 
-type Cup = { size: string }
-let smallCup: Cup = { size: "200ml" }
-let largeCup = { size: "200ml", material: "steel" }
-
-smallCup = largeCup
-console.log(smallCup);
