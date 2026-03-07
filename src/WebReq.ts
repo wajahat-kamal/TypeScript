@@ -12,9 +12,10 @@ interface Shoe {
 // get data using fetch 
 async function fetchData() {
     try {
-        
+        const res = await fetch("https://dummyjson.com/products")
+
     } catch (error) {
-        
+        console.log(error);
     }
 }
 
