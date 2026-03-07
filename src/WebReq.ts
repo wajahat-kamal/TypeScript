@@ -1,3 +1,5 @@
+// get data using fetch and axios
+
 import axios, { type AxiosResponse } from "axios";
 
 interface Shoe {
@@ -7,8 +9,18 @@ interface Shoe {
     price: number
 }
 
+// get data using fetch 
+async function fetchData() {
+    try {
+        
+    } catch (error) {
+        
+    }
+}
 
-(async function fetchData() {
+
+// get data using axios
+async function AxiosData() {
     try {
         const res: AxiosResponse = await axios.get("https://dummyjson.com/products")
         for (const product of res.data.products.splice(0, 10)) {
@@ -23,4 +35,8 @@ interface Shoe {
     } catch (error) {
         console.log(error);
     }
-}())
+}
+// AxiosData()
+
+
+
