@@ -18,6 +18,16 @@ const config1: Config = { appName: "Youtube", version: 1 }
 // console.log(config1);
 
 
+// methods
+interface machine {
+    start(): void;
+    stop(): void
+}
+const machine: machine = {
+    start(){console.log("Start")},
+    stop(){console.log("Stop")},
+}
+
 // 
 type Cup = { size: string }
 let smallCup: Cup = { size: "200ml" }
