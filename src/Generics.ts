@@ -4,5 +4,11 @@ function wrapInArray<T>(item: T): T[] {
 }
 
 console.log(wrapInArray("string"))
-console.log(wrapInArray({name: "Wajahat"}))
+console.log(wrapInArray({ name: "Wajahat" }))
 
+
+// generics with interface
+interface Box<T> {
+    age: T
+}
+const n: Box<number> = { age: 16 }
