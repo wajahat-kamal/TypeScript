@@ -6,6 +6,16 @@ interface Shoe {
     price: number
 }
 
+
+const fetchData = async () => {
+    try {
+        const res = await axios.get("https://dummyjson.com/products")
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
 await axios.get("https://dummyjson.com/products")
     .then(res => {
         for (const product of res.data.products.splice(0, 10)) {
