@@ -22,3 +22,10 @@ const location: [string, number] = ["Karachi", 200]
 // readonly tuple
 const readonlyTuple: readonly [string, number] = ["Karachi", 200]
 
+
+// enum
+enum Sugars {
+   LOW = 1,
+   MEDIUM = 2,
+   HIGH = 3
+}
